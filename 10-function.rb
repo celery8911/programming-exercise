@@ -2,11 +2,11 @@
 
 def find_max(x, y, z)
   if x>=y&&x>=z
-    puts "最大的数是#{x}"
+     "#{x}"
   elsif y>=x&&y>=z
-    puts "最大的数是#{y}"
+     "#{y}"
   elsif z>=x&&z>=y
-    puts "最大的数是#{z}"
+     "#{z}"
   end
 end
 
@@ -23,4 +23,4 @@ z = gets().to_f
 
 answer = find_max(x,y,z)
 
-puts "#{answer}"
+puts "最大的数是#{answer}"
