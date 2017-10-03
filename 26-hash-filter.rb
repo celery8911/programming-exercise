@@ -7,10 +7,25 @@ arr = [
   { "name" => "Steven", "age" => 22 },
   { "name" => "Vincent", "age" => 6 },
 ]
+ages = []
+arr.each do |h|
+ if h["age"] > 18
+  ages.push(h["age"])
+end
+end
+ages = ages.sort
+new_arr = []
+for age in ages
+  arr.each do |h|
+    if age == h["age"]
+    new_arr <<  h
+  end
+end
+end
 
-# ....
 
-puts "所有成年人，并由小到大: _________"
+
+puts "所有成年人，并由小到大: _#{new_arr}________"
 
 # 答案应该是
 #[
